@@ -9,6 +9,7 @@ const mainColors = {
   grey2: '#E9E9E9',
   grey3: '#EDEEF0',
   grey4: '#B1B7C2',
+  grey5: '#EEEEEE',
   blue1: '#407BFF',
   black1: '#000000',
   black2: 'rgba(0, 0, 0, 0.5)',
@@ -29,5 +30,6 @@ export const colors = {
   border: {
     focus: mainColors.purple2,
     blur: mainColors.grey2,
+    bottom: mainColors.grey5,
   },
 };
