@@ -10,20 +10,14 @@ const Group = () => {
       <Searcher title="Group" />
       <Gap height={10} />
       <ScrollView showsVerticalScrollIndicator={false}>
-        <List />
-        <List />
-        <List />
-        <List />
-        <List />
-        <List />
-        <List />
-        <List />
-        <List />
-        <List />
-        <List />
-        <List />
-        <List />
-        <List />
+        <List title="Alucard" subTitle="wkwkkwkw iya aja daha" />
+        <List
+          title="Miya"
+          subTitle="Times the winnes the handsome"
+          blurSubTitle
+        />
+        <List title="Hanzo" subTitle="Nani koreng" blurSubTitle />
+        <List title="Nana" subTitle="Kocak lu cuyy" blurSubTitle />
       </ScrollView>
     </View>
   );

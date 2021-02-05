@@ -8,6 +8,9 @@ import IconGroupActive from './ic-group-active';
 import IconPeople from './ic-people';
 import IconPeopleActive from './ic-people-active';
 import IconSearch from './ic-search';
+import IconProfile from './ic-profile';
+import IconLogout from './ic-logout';
+import IconForward from './ic-forward';
 
 export {
   IconLogo,
@@ -20,4 +23,7 @@ export {
   IconPeople,
   IconPeopleActive,
   IconSearch,
+  IconProfile,
+  IconLogout,
+  IconForward,
 };
