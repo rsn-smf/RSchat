@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: colors.white,
-    marginBottom: 20,
+    marginVertical: 10,
     ...Platform.select({
       ios: {
         shadowColor: colors.black,
