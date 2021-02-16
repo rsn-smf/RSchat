@@ -4,16 +4,35 @@ import {ScrollView} from 'react-native-gesture-handler';
 import {Gap, List, Searcher} from '../../components';
 import {colors} from '../../utils';
 
-const Messages = () => {
+const Messages = ({navigation}) => {
   return (
     <View style={styles.page}>
       <Searcher title="Messages" />
       <Gap height={10} />
       <ScrollView showsVerticalScrollIndicator={false}>
-        <List title="Alucard" subTitle="wkwkkwkw iya aja daha" blurSubTitle />
-        <List title="Miya" subTitle="Times the winnes the handsome" />
-        <List title="Hanzo" subTitle="Nani koreng" blurSubTitle />
-        <List title="Nana" subTitle="Kocak lu cuyy" blurSubTitle />
+        <List
+          title="Alucard"
+          subTitle="wkwkkwkw iya aja daha"
+          blurSubTitle
+          onPress={() => navigation.navigate('Chat')}
+        />
+        <List
+          title="Miya"
+          subTitle="Times the winnes the handsome"
+          onPress={() => navigation.navigate('Chat')}
+        />
+        <List
+          title="Hanzo"
+          subTitle="Nani koreng"
+          blurSubTitle
+          onPress={() => navigation.navigate('Chat')}
+        />
+        <List
+          title="Nana"
+          subTitle="Kocak lu cuyy"
+          blurSubTitle
+          onPress={() => navigation.navigate('Chat')}
+        />
       </ScrollView>
     </View>
   );

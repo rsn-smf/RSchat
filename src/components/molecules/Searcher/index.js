@@ -6,7 +6,7 @@ import {IconSearch} from '../../../assets';
 
 const Searcher = ({title}) => {
   return (
-    <View>
+    <View style={styles.container}>
       <View style={styles.containerTitle}>
         <Text style={styles.title}>{title}</Text>
       </View>
@@ -22,6 +22,9 @@ const Searcher = ({title}) => {
 export default Searcher;
 
 const styles = StyleSheet.create({
+  container: {
+    // backgroundColor: 'red',
+  },
   containerTitle: {
     alignItems: 'flex-end',
     paddingHorizontal: 20,
@@ -41,5 +44,6 @@ const styles = StyleSheet.create({
     fontFamily: fonts.primary.normal,
     fontSize: 16,
     marginLeft: 20,
+    flex: 1,
   },
 });

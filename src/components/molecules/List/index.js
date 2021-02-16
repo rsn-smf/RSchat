@@ -1,11 +1,11 @@
 import React from 'react';
-import {StyleSheet, Text, View, Image} from 'react-native';
+import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
 import {IconForward, IllPhotoBot} from '../../../assets';
 import {colors, fonts} from '../../../utils';
 
-const List = ({title, subTitle, blurSubTitle, icon}) => {
+const List = ({title, subTitle, blurSubTitle, icon, onPress}) => {
   return (
-    <View style={styles.list}>
+    <TouchableOpacity onPress={onPress} style={styles.list}>
       {icon ? icon : <Image style={styles.image} source={IllPhotoBot} />}
 
       <View style={styles.content}>
@@ -22,7 +22,7 @@ const List = ({title, subTitle, blurSubTitle, icon}) => {
           </View>
         </View>
       )}
-    </View>
+    </TouchableOpacity>
   );
 };
 

@@ -32,4 +32,8 @@ export const colors = {
     blur: mainColors.grey2,
     bottom: mainColors.grey5,
   },
+  chat: {
+    primary: mainColors.purple1,
+    secondary: mainColors.purple3,
+  },
 };

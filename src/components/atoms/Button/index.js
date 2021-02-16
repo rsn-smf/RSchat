@@ -1,8 +1,12 @@
 import React from 'react';
 import {Platform, StyleSheet, Text, TouchableOpacity} from 'react-native';
 import {colors, fonts} from '../../../utils';
+import ButtonIcon from './ButtonIcon';
 
-const Button = ({title, type, onPress}) => {
+const Button = ({type, title, onPress}) => {
+  if (type === 'icon') {
+    return <ButtonIcon onPress={onPress} />;
+  }
   return (
     <TouchableOpacity style={styles.container(type)} onPress={onPress}>
       <Text style={styles.title(type)}>{title}</Text>

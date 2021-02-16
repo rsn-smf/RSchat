@@ -7,6 +7,7 @@ import Messages from './Messages';
 import Group from './Group';
 import People from './People';
 import Profile from './Profile';
+import Chat from './Chat';
 
 export {
   Splash,
@@ -18,4 +19,5 @@ export {
   Group,
   People,
   Profile,
+  Chat,
 };

@@ -12,9 +12,9 @@ import {colors, fonts} from '../../utils';
 import {Gap, Searcher} from '../../components';
 import {IllPhotoBot} from '../../assets';
 
-const Person = () => {
+const Person = ({onPress}) => {
   return (
-    <TouchableOpacity style={styles.person}>
+    <TouchableOpacity style={styles.person} onPress={onPress}>
       <Image style={styles.image} source={IllPhotoBot} />
       <Text style={styles.name}>Nairobi Putri</Text>
       <Text style={styles.status}>status</Text>
@@ -22,23 +22,23 @@ const Person = () => {
   );
 };
 
-const People = () => {
+const People = ({navigation}) => {
   return (
     <View style={styles.page}>
       <Searcher title="People" />
       <Gap height={10} />
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.container}>
-          <Person />
-          <Person />
-          <Person />
-          <Person />
-          <Person />
-          <Person />
-          <Person />
-          <Person />
-          <Person />
-          <Person />
+          <Person onPress={() => navigation.navigate('Chat')} />
+          <Person onPress={() => navigation.navigate('Chat')} />
+          <Person onPress={() => navigation.navigate('Chat')} />
+          <Person onPress={() => navigation.navigate('Chat')} />
+          <Person onPress={() => navigation.navigate('Chat')} />
+          <Person onPress={() => navigation.navigate('Chat')} />
+          <Person onPress={() => navigation.navigate('Chat')} />
+          <Person onPress={() => navigation.navigate('Chat')} />
+          <Person onPress={() => navigation.navigate('Chat')} />
+          <Person onPress={() => navigation.navigate('Chat')} />
         </View>
       </ScrollView>
     </View>

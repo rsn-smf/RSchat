@@ -11,6 +11,7 @@ import {
   Group,
   People,
   Profile,
+  Chat,
 } from '../pages';
 import {BottomNavigator} from '../components';
 
@@ -55,6 +56,11 @@ const Router = () => {
       <Stack.Screen
         name="UploadPhoto"
         component={UploadPhoto}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Chat"
+        component={Chat}
         options={{headerShown: false}}
       />
       <Stack.Screen
