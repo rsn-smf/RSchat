@@ -20,12 +20,14 @@ const Profile = () => {
         blurSubTitle
         title="Edit Profile"
         subTitle="Last Updated Yesterday"
+        onPress={() => alert('coming soon')}
       />
       <List
         icon={<IconLogout />}
         blurSubTitle
         title="Logout"
         subTitle="Exit RSchat"
+        onPress={() => alert('coming soon')}
       />
     </View>
   );

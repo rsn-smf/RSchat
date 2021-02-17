@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, View, Image} from 'react-native';
 import {IllPhotoBot} from '../../assets';
-import {Header, Chatting, Gap} from '../../components';
+import {Header, Chatting, Gap, InputChat} from '../../components';
 import {colors, fonts} from '../../utils';
 
 const data = [
@@ -67,6 +67,7 @@ const Chat = ({navigation}) => {
       />
       <Gap height={20} />
       <Chatting dataChat={data} />
+      <InputChat />
     </View>
   );
 };

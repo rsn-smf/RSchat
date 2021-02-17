@@ -1,12 +1,13 @@
 import React from 'react';
 import {StyleSheet, Text, View, Image} from 'react-native';
+import {IconBack} from '../../../assets';
 import {colors, fonts} from '../../../utils';
 import {Button, Gap} from '../../atoms';
 
 const HeaderPhoto = ({title, subTitle, photo, onPress}) => {
   return (
     <View style={styles.containerPhoto}>
-      <Button type="icon" onPress={onPress} />
+      <Button icon={<IconBack />} onPress={onPress} />
       <Image style={styles.image} source={photo} />
       <Gap width={20} />
       <View style={styles.containerTitle}>

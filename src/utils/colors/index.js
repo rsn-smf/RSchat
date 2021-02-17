@@ -36,4 +36,5 @@ export const colors = {
     primary: mainColors.purple1,
     secondary: mainColors.purple3,
   },
+  input: mainColors.grey3,
 };

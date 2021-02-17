@@ -17,7 +17,10 @@ const GetStarted = ({navigation}) => {
         </Text>
       </View>
       <View>
-        <Button title="Get Started" />
+        <Button
+          title="Get Started"
+          onPress={() => navigation.navigate('Register')}
+        />
         <View style={{height: 15}}></View>
         <Button
           title="Sign In"

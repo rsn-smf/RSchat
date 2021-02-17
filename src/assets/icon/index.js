@@ -11,6 +11,7 @@ import IconSearch from './ic-search';
 import IconProfile from './ic-profile';
 import IconLogout from './ic-logout';
 import IconForward from './ic-forward';
+import IconSend from './ic-send';
 
 export {
   IconLogo,
@@ -26,4 +27,5 @@ export {
   IconProfile,
   IconLogout,
   IconForward,
+  IconSend,
 };
