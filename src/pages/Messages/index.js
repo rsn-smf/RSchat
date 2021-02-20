@@ -1,10 +1,25 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {StyleSheet, View} from 'react-native';
 import {ScrollView} from 'react-native-gesture-handler';
 import {Gap, List, Searcher} from '../../components';
 import {colors} from '../../utils';
+import {Fire} from '../../config';
 
 const Messages = ({navigation}) => {
+  useEffect(() => {
+    Fire.auth().onAuthStateChanged((user) => {
+      if (user) {
+        console.log(user);
+        // User is signed in, see docs for a list of available properties
+        // https://firebase.google.com/docs/reference/js/firebase.User
+        // var uid = user.uid;
+        // ...
+      } else {
+        // User is signed out
+        // ...
+      }
+    });
+  }, []);
   return (
     <View style={styles.page}>
       <Searcher title="Messages" />
